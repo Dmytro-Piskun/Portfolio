@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="rockPaperScissors">
+        <div id="computerCardContainer">
+            <div class="cards" id="computerCard">
+                <div id="cardFace" class="cards">❓</div>
+                <div id="cardBack" class="cards"></div>
+            </div>
+        </div>
+        <div id="userCardsContainer">
+            <div class="cards leftCard "  id="rockCard">
+                🪨
+            </div>
+            <div class="cards centralCard"  id="scissorsCard">
+                ✂️
+            </div>
+            <div class="cards rightCard"  id="paperCard">
+                📃
+            </div>
+            
+        </div>
+        <div id="result" >
+            <div id="resultText">😁</div>
+                 <div id="scoreDisplay">0:0</div>
+            <div id="buttonsContainer">
+                <button id="buttonPlayAgain" onclick="playAgain(false)" class="buttonGameOption">Play gain</button>
+                <button id="buttonResetScore" onclick="playAgain(true)" class="buttonGameOption">Reset Score</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
